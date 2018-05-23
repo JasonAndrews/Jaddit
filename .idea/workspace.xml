@@ -96,29 +96,6 @@
               <item name="Jaddit" type="b2602c69:ProjectViewProjectNode" />
               <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Jaddit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
-              <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jaddit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
-              <item name="subs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jaddit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
-              <item name="subs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jaddit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jaddit" type="462c0819:PsiDirectoryNode" />
-              <item name="subs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="subs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -184,10 +161,11 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2936118" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5012285" side_tool="true" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4987715" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32893288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32893288" />
@@ -207,6 +185,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Python Console" order="7" />
     </layout>
