@@ -12,6 +12,7 @@ def index(request):
 
     subs = Sub.objects.all()
 
+    # renders the template file: subs/templates/subs/index.html
     return render(request, 'subs/index.html', {'subs': subs})
 
 

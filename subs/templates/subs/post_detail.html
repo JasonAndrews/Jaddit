@@ -1,0 +1,22 @@
+{% extends 'subs/base.html' %}
+
+{% block body %}
+
+<div class="container-fluid songs-container">
+
+    <div class="row">
+
+        <div class="col-sm-4 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{% url 'sub:detail' post.id %}">
+
+                    </a>
+                    <span> {{ post.text }} </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
