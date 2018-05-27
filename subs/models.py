@@ -13,8 +13,8 @@ class Sub(models.Model):
         return self.name + ' - ' + self.title
 
 
-# post
-class Post(models.Model):
+# thread
+class Thread(models.Model):
     sub = models.ForeignKey(Sub, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     url = models.URLField()
@@ -26,8 +26,8 @@ class Post(models.Model):
 
 # comment
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    thread = models.ForeignKey(Thread, on_delete=models.CASCADE)
     text = models.CharField(max_length=5000)
 
     def __str__(self):
-        return self.post.title + '/' + self.id
+        return self.thread.title + '/' + self.id

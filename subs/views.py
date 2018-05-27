@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login
-from .models import Sub, Post, Comment
+from .models import Sub, Thread, Comment
+from django.shortcuts import render, get_object_or_404
 
 from django.views import generic
 from django.views.generic import View
@@ -58,3 +59,14 @@ def register(request):
                 login(request, user)
 
                 return redirect('subs:index')
+
+
+def view_sub(request, sub_name):
+
+    sub = Sub.objects.get(name=sub_name)
+    threads = Thread.objects.filter(sub__in=Sub.objects.filter(id=sub.id))
+
+    if threads:
+        return HttpResponse("Welcome to " + sub.name)#render(request, 'music/sub_detail.html', {'threads': threads})
+    else:
+        return HttpResponse("No threads yet!")

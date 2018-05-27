@@ -1,0 +1,22 @@
+{% extends 'subs/base.html' %}
+
+{% block body %}
+<div class="subs-container container-fluid">
+
+    <!-- subs -->
+    <div class="row">
+        {% if threads %}
+            {% for thread in threads %}
+                <div class="col-sm-100">
+                   <a href="#"> {{ thread.title }} </a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-sm-100">
+                <span> No threads </span>
+        {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

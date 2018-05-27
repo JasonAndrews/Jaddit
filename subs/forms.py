@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django import forms
 
-from .models import Sub, Post, Comment
+from .models import Sub, Thread, Comment
 
 
 class UserForm(forms.ModelForm):
@@ -22,7 +22,7 @@ class SubForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
 
     class Meta:
-        model = Post
+        model = Thread
         fields = ['title', 'url', 'text']
 
 
